@@ -29,7 +29,7 @@
                                     <segue destination="UwR-G9-y5k" kind="show" id="0My-Xg-JWA"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5L-ZJ-2Sl">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5L-ZJ-2Sl" customClass="DrawingView" customModule="DrawingProject" customModuleProvider="target">
                                 <rect key="frame" x="21" y="40" width="332" height="434"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77741879071801756" green="1" blue="0.89872583275464113" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
