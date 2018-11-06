@@ -24,7 +24,7 @@ public class DrawingView: UIView
     {
         let figure : UIBezierPath = UIBezierPath()
         
-        UIColor.magenta.setStroke()
+        UIColor.orange.setStroke()
         figure.lineWidth = 3.0
         
         figure.addArc(withCenter: CGPoint(x: 200, y: 200),
