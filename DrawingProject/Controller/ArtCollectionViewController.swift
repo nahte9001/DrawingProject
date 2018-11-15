@@ -60,13 +60,16 @@ public class ArtCollectionViewController: UICollectionViewController
     public override func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        let imageView = UIImageView(image: creativeCS[indexPath.row])
+        imageView.frame = self.view.frame
+        imageView.backgroundColor = .cyan
+        imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
         
-        artCell.backgroundColor = .black
-        artCell.artImage.image = creativeCS[indexPath.row]
-        artCell.artLabel.text = lavels[indexPath.row]
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        imageView.addGestureRecognizer(tap)
         
-        return artCell
+        self.view.addSubview(imageView)
     }
     
     public func collectionView (_ collectionView: UICollectionView,
@@ -88,7 +91,8 @@ public class ArtCollectionViewController: UICollectionViewController
         return sectionInsets
     }
     
-    {    public func collectionView(_ collectionView: UICollectionView,
+    {
+        {    public func collectionView(_ collectionView: UICollectionView,
                                layout collectionViewLayout: UICollectionViewLayout,
                                minimumLineSpacingForSectionAt section: Int) -> CGFloat
     
