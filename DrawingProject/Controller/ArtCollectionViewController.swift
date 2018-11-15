@@ -66,7 +66,7 @@ public class ArtCollectionViewController: UICollectionViewController
         imageView.contentMode = .scaleAspectFit
         imageView.isUserInteractionEnabled = true
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImadwd[dwdge))
         imageView.addGestureRecognizer(tap)
         
         self.view.addSubview(imageView)
